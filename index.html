@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <title>Ciąg Fibonacciego</title>
 </head>
-<body style="font-family: Fantasy; background-image: url('https://seremak.org/tlo-hania.jpeg');text-align:center;background-attachment: fixed;">
+<body style="font-family: Fantasy; background-image: url('https://seremak.org/tlo-hania.jpeg');text-align:center;background-attachment: fixed;background-size: 100%;">
     <h1>Ciąg Fibonacciego</h1>
     <h2>Co to jest ciąg Fibonacciego</h2>
     <p>Ciąg liczb naturalnych, gdzie każdy element jest równy sumie dwóch poprzednich. Przykład:</p>
@@ -28,10 +28,10 @@
         let a = 0;
         let b = 1;
         let c = 0;
-        let res = "<p>1. 0</p><p>2. 1</p>";
+        let res = "1. 0<br/>2. 1<br/>";
 
         for (i = 2; i < ile; i++) {
-            res += "<p>" + i + ". " + (a+b) + "</p>";
+            res += (i + 1) + ". " + (a+b) + "<br/>";
             c = a + b;
             a = b;
             b = c;
